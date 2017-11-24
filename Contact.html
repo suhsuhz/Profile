@@ -1,0 +1,306 @@
+<!doctype html>
+<html>
+  <head>
+      <title>profile</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <!-- <link rel="stylesheet" type="text/css" href="Source_style.css"> -->
+	  
+	  <style>
+	  
+	  
+		/*reset*/
+
+		/* http://meyerweb.com/eric/tools/css/reset/ 
+		   v2.0 | 20110126
+		   License: none (public domain)
+		*/
+
+		html, body, div, span, applet, object, iframe,
+		h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+		a, abbr, acronym, address, big, cite, code,
+		del, dfn, em, img, ins, kbd, q, s, samp,
+		small, strike, strong, sub, sup, tt, var,
+		b, u, i, center,
+		dl, dt, dd, ol, ul, li,
+		fieldset, form, label, legend,
+		table, caption, tbody, tfoot, thead, tr, th, td,
+		article, aside, canvas, details, embed, 
+		figure, figcaption, footer, header, hgroup, 
+		menu, nav, output, ruby, section, summary,
+		time, mark, audio, video {
+		  margin: 0;
+		  padding: 0;
+		  border: 0;
+		  font-size: 100%;
+		  font: inherit;
+		  vertical-align: baseline;
+		}
+		/* HTML5 display-role reset for older browsers */
+		article, aside, details, figcaption, figure, 
+		footer, header, hgroup, menu, nav, section {
+		  display: block;
+		}
+		
+		body {
+		  line-height: 1;
+		}
+		ol, ul {
+		  list-style: none;
+		}
+		blockquote, q {
+		  quotes: none;
+		}
+		blockquote:before, blockquote:after,
+		q:before, q:after {
+		  content: '';
+		  content: none;
+		}
+		table {
+		  border-collapse: collapse;
+		  border-spacing: 0;
+		}
+		/*end reset*/
+		
+		body {
+		  color: black;
+		  font-size: 87.5;
+		  font-family: 'Ubuntu', sans-serif;
+		  line-height: 1.5;
+		  text-align: left;
+		}
+
+		a {
+		  text-decoration: none;
+		  color: white;
+		}
+		a:link, a:visited {
+		  color: white;
+		}
+		
+		p {
+			opacity: 0.8;
+		}
+
+		.body {
+		  width: 70%;
+		  margin: 0 auto;
+		  clear: both;
+		}
+
+		.mainHeader {
+		  padding-top: 10%;
+		}
+		
+		.mainHeader img {
+			width: 20%;
+			opacity: 0.7;
+			width: 40%;
+  			height: 200px;
+			padding-bottom: 1%;
+		}
+
+		.mainHeader nav {
+		  opacity: 0.5;
+		  height: 40px;
+		  border-radius: 5px;
+		  -moz-border-radius: 5px;
+		  -webkit-border-radius: 5px;
+		  background-color: green;
+		}
+
+		.mainHeader nav ul {
+		  margin: 0 auto;
+		}
+
+		.mainHeader nav ul li {
+		  display: inline;
+		}
+
+		.mainHeader nav a:link, .mainHeader nav a:visited {
+		  color: white;
+		  display: inline-block; 
+		  padding: 10px 25px;
+		  height: 20px;
+		}
+
+		.mainHeader nav a:hover, mainHeader nav a:active,
+		.mainHeader nav .active a:link, .mainHeader nav .active a:visited {
+		  background-color: #FF2424;
+		  text-shadow: none;
+		}
+		
+		
+		.mainHeader nav ul li a {
+		  border-radius: 5px;
+		  -moz-border-radius: 5px;
+		  -webkit-border-radius: 5px;
+				}
+
+		.mainContent {
+		  line-height: 25px;
+		  border-radius: 5px;
+   		  -moz-border-radius: 5px;
+   		  -webkit-border-radius: 5px;
+		}
+
+		.content {
+		  width: 100%;
+		  float: left;
+		}
+
+		.mainContent a {
+			color: rgba(0,0,0,0.7);
+			display: inline-block;
+		}
+
+		.mainContent p {
+			color: black;
+			text-align: center;
+		}
+		
+		.topcontent {
+			background-color: rgba(210,108,196,0.15);
+			border-radius: 5px;
+  			-moz-border-radius: 5px;
+  			-webkit-border-radius: 5px;
+  			padding: 3% 5%;
+  			margin: 2% 0;
+		}
+		
+		.topcontent p {
+			font-weight: bold;
+			color: green;
+			text-align:left;
+			margin-bottom: 1%;
+		}
+		
+		.topcontent ul li {
+			width: 100%;
+			margin-top: 1%;
+		}
+		.mainContent h2 {
+			margin-bottom: 2%;
+			color: rgba(255,36,36,0.5);
+			font-weight: bold;
+		}
+		
+		.post-info {
+			font-style: italic;
+			color: #999;
+			font-size: 85%;
+		}
+		
+		.mainFooter {
+			width: 100%;
+			height: 40px;
+			float: left;
+			opacity: 0.5;
+		 	height: 40px;
+		 	border-radius: 5px;
+		 	-moz-border-radius: 5px;
+		 	-webkit-border-radius: 5px;
+		 	background-color: green;	
+			margin-bottom: 1%;
+		}
+		
+		.mainFooter p {
+			width: 92%;
+			margin: 10px auto;
+			font-size: 0.7rem;
+			color: white;
+		}
+		
+		
+		/* 모바일화면 */
+		
+		@media only screen and (min-width: 150px) and (max-width: 600px) {
+			
+			.body {
+				width: 90%;
+				font-size: 95%;
+			}
+			
+			.mainHeader img {
+				width: 100%;
+				height: 140px;
+			}
+			
+			.mainHeader nav {
+				height: 160px;
+			}
+			
+			.mainHeader nav ul {
+				padding-left: 0;
+			}
+			
+			.mainHeader nav ul li {
+				width: 100%;
+				text-align: center;
+			}
+			
+			.mainHeader nav a:link, .mainHeader nav a:visited {
+				padding: 10px 25px;
+				height: 20px;
+				display: block;
+			}
+			
+			.content {
+				width: 100%;
+				float: left;
+				margin-top: 2%;
+			}
+			
+			.post-info {
+				display: none;
+			}
+			
+			.topcontent {
+				margin-bottom:4%;
+			}
+	
+		}
+	  </style>
+	  
+  </head>
+
+  <body class="body">
+    <header class="mainHeader">
+		<div>
+			<img src="https://user-images.githubusercontent.com/31497805/32977435-95d0b6da-cc70-11e7-90de-208c7f5ce998.png" alt="snow">
+      	</div>
+		
+      <nav>
+        <ul>
+          <li><a href="/suhsuhz/Profile/index.html">HOME</a></li>
+          <li><a href="/suhsuhz/Profile/Portfolio.html">Portfolio</a></li>
+          <li><a href="/suhsuhz/Profile/Source.html">Source</a></li>
+          <li class="active"><a href="/suhsuhz/Profile/Source.html">Contact</a></li>
+        </ul>
+      </nav>
+    
+    </header>
+    
+    <div class="mainContent">
+      <div class="content">
+        
+        <article class="topcontent">
+          <header>
+            <h2>Contact Me</h2>
+          </header> 
+          <content>
+			<p>
+				e-mail: <a href="mailto:suhjh0222@naver.com"> suhjh0222@naver.com </a> <br>
+				home: <a href="http://goorm-test.run.goorm.io/suhsuhz/Profile/">구름ide home</a>
+			</p>
+          </content>
+        </article>
+
+      </div>  
+    </div>
+    
+    <footer class="mainFooter">
+      <p>mail. suhjh0222@naver.com</p>
+    </footer>
+  </body>
+</html>
